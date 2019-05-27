@@ -231,7 +231,7 @@ void sing(int s) {
 
       int noteDuration = 1000 / tempo[thisNote];
 
-      buzz(melodyPin, melody[thisNote], noteDuration):
+      buzz(melodyPin, melody[thisNote], noteDuration);
       int pauseBetweenNotes = noteDuration * 1.30;
       delay(pauseBetweenNotes);
       buzz(melodyPin, 0, noteDuration);
